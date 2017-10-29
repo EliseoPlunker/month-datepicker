@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  myForm: FormGroup;
+
+  constructor(private fb: FormBuilder) { }
+
+  ngOnInit() {
+    this.myForm = this.fb.group({
+      fecha: { year: 2017, month: 10 }
+    });
+
+  }
 }
