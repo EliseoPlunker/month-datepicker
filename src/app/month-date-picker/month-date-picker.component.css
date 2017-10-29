@@ -1,24 +1,4 @@
-span {
-    display: inline-block;
-    width: 25px;
-    line-height: 25px;
-    text-align: center;
-    cursor: pointer;
-  }
-  elemento {
-    padding: 0px;
-    top: 37px;
-    left: 0px;
-}
-[_nghost-c4] {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-}
-.d-inline-block {
-    display: inline-block !important;
-}
-.rounded {
-    border-radius: .25rem !important;
-}
+
 .dropdown-menu {
     width: 15rem;
     padding: 0 0.2rem 0.5rem 0.2rem;
